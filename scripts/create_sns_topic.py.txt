@@ -1,0 +1,8 @@
+  GNU nano 2.5.3                  File: create_sns_topic.py                                            
+
+import boto3
+
+sns = boto3.client('sns')
+response = sns.create_topic(Name="cpdcourseworksnstopic")
+
+print(response)

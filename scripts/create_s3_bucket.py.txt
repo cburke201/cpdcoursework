@@ -1,0 +1,7 @@
+  GNU nano 2.5.3                  File: create_s3_bucket.py                                  Modified  
+
+import boto3
+
+s3 = boto3.client('s3')
+
+s3.create_bucket(Bucket='cpdcourseworkcraigburke')

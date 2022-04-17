@@ -1,0 +1,16 @@
+  GNU nano 2.5.3                    File: upload_file.py                                     Modified  
+
+import boto3 
+import time 
+
+s3= boto3.client('s3') 
+
+s3.upload_file('image1.jpg','s3bucket2s2032103','image1.jpg')
+time.sleep(30) 
+s3.upload_file('image2.png','s3bucket2s2032103','image2.png') 
+time.sleep(30) 
+s3.upload_file('image3.jpg','s3bucket2s2032103','image3.jpg') 
+time.sleep(30)
+s3.upload_file('image4.jpg','s3bucket2s2032103','image4.jpg') 
+time.sleep(30)
+s3.upload_file('image5.jpg','s3bucket2s2032103','image5.jpg')

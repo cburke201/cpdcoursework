@@ -1,0 +1,13 @@
+GNU nano 2.5.3                 File: create_ec2_instance.py                                          
+
+import boto3
+
+ec2_client = boto3.client("ec2")
+
+ec2_client.run_instances(
+                ImageId="ami-03ededff12e34e59e",
+                MinCount=1,
+                MaxCount=1,
+                InstanceType="t2.micro",
+                KeyName="vockey"
+)
